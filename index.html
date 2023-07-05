@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Avançado</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>TEM TUDO FILMES E SÉRIES</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Séries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2019/08/01/21/40/spiderman-4378357_1280.png" >
+                    <div class="carousel-caption"></div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2019/03/03/21/53/fantasy-4032943_1280.jpg" >
+                    <div class="carousel-caption"></div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/05/15/09/13/demonstration-767983_1280.jpg" >
+                        <div class="carousel-caption"></div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <h1 class="h-25">Filmes</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h5>Últimos Lançamentos</h5>
+                    <div class="container g-0">
+                        <div class="row">
+                            <div class="col-md-4 post">
+                                <img src="https://cdn.pixabay.com/photo/2019/10/17/21/17/joker-4557864_640.jpg" alt="">
+                                <h4 class="h5">Filme A</h4>
+                                <time>05/07/2023</time>
+                                <a class="btn btn-primary btn-sm">Assista</a>
+                            </div>
+                            <div class="col-md-4 post">
+                                <img src="https://cdn.pixabay.com/photo/2013/03/06/01/01/grace-kelly-90774_640.jpg" alt="">
+                                <h4 class="h5">Filme B</h4>
+                                <time>10/06/2023</time>
+                                <a class="btn btn-primary btn-sm">Assista</a>
+                            </div>
+                            <div class="col-md-4 post">
+                                <img src="https://cdn.pixabay.com/photo/2016/01/13/22/54/man-1139066_640.jpg" alt="">
+                                <h4 class="h5">Filme C</h4>
+                                <time>25/06/2023</time>
+                                <a class="btn btn-primary btn-sm">Assista</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <h1 class="h-25">Séries</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h5>Novas Temporadas</h5>
+                    <div class="container g-0">
+                        <div class="row">
+                            <div class="col-md-4 post">
+                                <img src="https://cdn.pixabay.com/photo/2019/10/17/21/17/joker-4557864_640.jpg" alt="">
+                                <h4 class="h5">Série A</h4>
+                                <time>05/07/2023</time>
+                                <a class="btn btn-primary btn-sm">Temporadas</a>
+                            </div>
+                            <div class="col-md-4 post">
+                                <img src="https://cdn.pixabay.com/photo/2013/03/06/01/01/grace-kelly-90774_640.jpg" alt="">
+                                <h4 class="h5">Série B</h4>
+                                <time>10/06/2023</time>
+                                <a class="btn btn-primary btn-sm">Temporadas</a>
+                            </div>
+                            <div class="col-md-4 post">
+                                <div class="card text-bg-dark">
+                                    <div class="card-header">
+                                        Conheça este Streaming
+                                    </div>
+                                    <img src="https://png.pngtree.com/png-vector/20210217/ourmid/pngtree-live-streaming-button-icon-logo-vector-png-image_2917405.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-tittle">Live Streaming</h4>
+                                        <p class="card-text">
+                                            Todos os lançamentos de filmes e séries estão aqui. Venha conhecer e apaixone-se!
+                                            Todos os gêneros e todas as temporadas preferidas estão aqui!
+                                            Life Streaming, o maior streaming do Brasil!
+                                            Veja nossas Promoções para novos assinantes!
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Assine!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="h4">Entre em contato</h2>
+                        <form action="">
+                            <label class="form-label" for="nome">Seu nome:</label>
+                            <input class="form-control" type="text" id="nome">
+                            <label for="email" class="form-label">Seu e-mail:</label>
+                            <input type="email" class="form-control" id="email">
+                            <label for="mensagem" class="form-label">Sua mensagem:</label>
+                            <textarea class="form-control" id="mensagem"></textarea>
+                            <div class="form-check form-switch">
+                                <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+                                <input class="form-check-input" type="checkbox" id="aceito-termos">
+                            </div>
+                            <button class="btn btn-success">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
